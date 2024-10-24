@@ -1,0 +1,12 @@
+[package]
+name = "axum-maud"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.7.7", features = ["macros", "multipart"] }
+maud = { version = "0.26.0", features = ["axum", "axum-core", "http"] }
+serde = { version = "1.0.213", features = ["serde_derive", "derive"] }
+serde_json = { version = "1.0.132", features = ["preserve_order"] }
+tokio = { version = "1.41.0", features = ["full"] }
+tracing-subscriber = "0.3.18"
